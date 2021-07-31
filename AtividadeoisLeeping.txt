@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AtividadeoisLeeping
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Nome do primeiro aluno");
+            string aluno = Console.ReadLine();
+            Console.WriteLine("Digite a nota 1:");
+            double nota1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a nota 2:");
+            double nota2 = Convert.ToDouble(Console.ReadLine());
+            double mediaAluno = (nota1 + nota2) / 2;
+
+            if (mediaAluno == 0)
+            {
+                Console.WriteLine($"Você não aprendeu nada");
+            }
+            else if (mediaAluno >= 1 && mediaAluno <= 4)
+            {
+                Console.WriteLine($"Você foi reprovado!");
+            }
+            else if (mediaAluno >= 5 && mediaAluno <= 7)
+            {
+                Console.WriteLine($"Você passou raspando...");
+            }
+            else if (mediaAluno >= 8 || mediaAluno <= 9)
+            {
+                Console.WriteLine($"Você mandou bem!");
+            }
+            if (mediaAluno >= 10)
+            { 
+                Console.WriteLine("Parabéns! Você é muito inteligente!");
+                Console.ReadKey();
+            }
+
+            {
+   
+   {
+      Random rnd = new Random();
+      int caseSwitch = rnd.Next(1,4);
+
+      switch (caseSwitch)
+      {
+          case 1:
+              Console.WriteLine("Case 1");
+              break;
+          case 2:
+          case 3:
+              Console.WriteLine($"Case {caseSwitch}");
+              break;
+          default:
+              Console.WriteLine($"An unexpected value ({caseSwitch})");
+              break;
+      }
+   }
+}
+
+            // Nova\\
+
+            {
+                int n = 0;
+                while (n < 5)
+                {
+                    Console.Write(n);
+                    n++;
+                }
+                // Output:
+                // 01234
+            }
+
+
+            }
+
+        }
+}
